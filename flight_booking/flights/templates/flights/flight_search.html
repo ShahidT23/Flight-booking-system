@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Flights</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Search Flights</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <form method="get">
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="departure" class="form-label">Departure</label>
+                            <input type="text" class="form-control" id="departure" name="departure" placeholder="e.g., BOM" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="destination" class="form-label">Destination</label>
+                            <input type="text" class="form-control" id="destination" name="destination" placeholder="e.g., DEL" required>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="departure_date" class="form-label">Departure Date</label>
+                            <input type="date" class="form-control" id="departure_date" name="departure_date" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="return_date" class="form-label">Return Date (Optional)</label>
+                            <input type="date" class="form-control" id="return_date" name="return_date">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Search Flights</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
